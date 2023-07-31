@@ -59,6 +59,11 @@ body {
 .nav__item {
   color: #FFF;
   font-size: 20px;
+  transition: all 300ms;
+}
+
+.nav__item:hover {
+  border-bottom: 3px solid;
 }
 
 .header__active {
@@ -95,6 +100,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 11px;
+  transition: all 300ms;
 }
 
 .content-link-text {
@@ -103,6 +109,15 @@ body {
   font-size: 20px;
   text-transform: uppercase;
 }
+
+.header__content-link:hover {
+  background: #C4C4C4;
+}
+
+.header__content-link:hover .content-link-text {
+  color: #FFF;
+}
+
 
 /* -------Desription Section---------- */
 .description {
@@ -230,6 +245,11 @@ body {
   text-transform: uppercase;
 }
 
+.products-items-link:hover {
+  background: #C4C4C4;
+  color: #282828;
+}
+
 /* ----------Footer------- */
 .footer {
   background: #282828;
@@ -258,4 +278,9 @@ body {
 .footer__item {
   color: #FFF;
   font-size: 20px;
+  transition: all 300ms;
+}
+
+.footer__item:hover {
+  border-bottom: 3px solid;
 }
