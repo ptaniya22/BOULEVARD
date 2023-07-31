@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mnsr_Bd';
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #151515;
+}
+
+.container {
+  max-width: 1110px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* ----------header---------- */
+/* .header {
+  background: #282828;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+} */
+
+.header__box-fix {
+  width: 100%;
+  position: fixed;
+  background: #282828;
+}
+
+.header__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  padding-left: 30px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav__item {
+  color: #FFF;
+  font-size: 20px;
+}
+
+.header__active {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.header__content {
+  background: url(../images/hero-header.jpg) no-repeat center /cover;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 38px;
+  align-items: center;
+}
+
+.header__title {
+  color: #FFF;
+  font-family: 'Prosto_Rg';
+  font-size: 100px;
+  line-height: 75px;
+  /* 75% */
+}
+
+.header__content-link {
+  width: 200px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+}
+
+.content-link-text {
+  color: #171718;
+  font-family: 'Mnsr_Md';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* -------Desription Section---------- */
+.description {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.description-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.description-item-text {
+  color: #FFF;
+  font-family: 'Mnsr_Md';
+  font-size: 22px;
+}
+
+.description-item {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+}
+
+.description-item.top {
+  gap: 30px;
+}
+
+.description-item.bottom {
+  gap: 87p;
+  flex-direction: row-reverse;
+}
+
+/* -------Advantage Section------------ */
+.advantages__box {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  align-items: center;
+  gap: 87px;
+}
+
+.advantages__box-text {
+  color: #FFF;
+  font-size: 20px;
+}
+
+.advantages__box-pic {
+  position: relative;
+}
+
+.advantages__box-pic::before {
+  content: "";
+  width: 61px;
+  border-bottom: 1px solid #C4C4C4;
+  background: white;
+  display: block;
+  position: absolute;
+  right: -74px;
+  top: 50%;
+}
+
+.advantages__box-pic::after {
+  content: "";
+  width: 61px;
+  border-bottom: 1px solid #C4C4C4;
+  background: white;
+  display: block;
+  position: absolute;
+  left: -74px;
+  top: 50%;
+}
+
+.advantages__box-text.left {
+  text-align: right;
+}
+
+/* ---------Products Section---------- */
+.products {
+  padding-top: 79px;
+  padding-bottom: 55px;
+}
+
+.products__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-items {
+  max-width: 255px;
+  width: 100%;
+  height: 312px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #FFF;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products-items-link {
+  padding-top: 10px;
+  width: 161px;
+  height: 34px;
+  flex-shrink: 0;
+  background: #151515;
+  color: #FFF;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.products-items-title {
+  color: #000;
+  font-size: 20px;
+}
+
+.products-items-text {
+  color: #000;
+  font-family: 'Mnsr_Rg';
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* ----------Footer------- */
+.footer {
+  background: #282828;
+  box-shadow: 0px -4px 20px 0px rgba(0, 0, 0, 0.25);
+  padding: 80px 0;
+}
+
+.footer__box {
+  display: flex;
+
+}
+
+.footer__active {
+  display: flex;
+  gap: 29px;
+}
+
+.footer__list {
+  padding-left: 339px;
+  padding-right: 240px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.footer__item {
+  color: #FFF;
+  font-size: 20px;
+}
