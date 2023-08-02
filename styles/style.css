@@ -26,15 +26,11 @@ body {
 }
 
 /* ----------header---------- */
-/* .header {
-  background: #282828;
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
-} */
-
 .header__box-fix {
   width: 100%;
   position: fixed;
   background: #282828;
+  z-index: 2;
 }
 
 .header__box {
@@ -56,13 +52,13 @@ body {
   align-items: center;
 }
 
-.nav__item {
+.nav__item-link {
   color: #FFF;
   font-size: 20px;
   transition: all 300ms;
 }
 
-.nav__item:hover {
+.nav__item-link:hover {
   border-bottom: 3px solid;
 }
 
@@ -70,6 +66,15 @@ body {
   display: flex;
   gap: 25px;
   align-items: center;
+}
+
+.header__active a {
+  transition: all 300ms;
+}
+
+.header__active-loupe:hover,
+.header__active-cart:hover {
+  transform: scale(1.4);
 }
 
 .header__content {
@@ -141,6 +146,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: space-between;
+  align-items: center;
 }
 
 .description-item.top {
@@ -156,7 +162,6 @@ body {
 .advantages__box {
   display: flex;
   flex-direction: row;
-  align-items: space-between;
   align-items: center;
   gap: 87px;
 }
@@ -168,6 +173,7 @@ body {
 
 .advantages__box-pic {
   position: relative;
+  display: flex;
 }
 
 .advantages__box-pic::before {
@@ -175,7 +181,7 @@ body {
   width: 61px;
   border-bottom: 1px solid #C4C4C4;
   background: white;
-  display: block;
+  /* display: block; */
   position: absolute;
   right: -74px;
   top: 50%;
@@ -259,7 +265,7 @@ body {
 
 .footer__box {
   display: flex;
-
+  justify-content: space-between;
 }
 
 .footer__active {
@@ -268,8 +274,6 @@ body {
 }
 
 .footer__list {
-  padding-left: 339px;
-  padding-right: 240px;
   display: flex;
   gap: 30px;
   align-items: center;
@@ -283,4 +287,13 @@ body {
 
 .footer__item:hover {
   border-bottom: 3px solid;
+}
+
+.footer__active a {
+  transition: all 300ms;
+}
+
+.footer_active-visac:hover,
+.footer_active-masterc:hover {
+  transform: scale(1.2);
 }
