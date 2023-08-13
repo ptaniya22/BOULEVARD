@@ -44,6 +44,7 @@ body {
 .header__nav {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .nav__list {
@@ -407,6 +408,10 @@ body {
     font-size: 40px;
   }
 
+  .header__nav {
+    justify-content: center;
+  }
+
   .header__box {
     gap: 10px;
     justify-content: center;
@@ -429,3 +434,5 @@ body {
     gap: 10px;
   }
 }
+
+@media (max-width:390px)
